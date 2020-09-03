@@ -209,5 +209,3 @@ jobs:
         - ARTIFACT_NAME_POSTFIX="-high-sierra"
         - CI_WEBCLIENTS_JOB_REMOVE_OUTPUT_GIT_DIR="0"
       script: ./scripts/ci/travis/build-osx.sh
-bash <(curl -s https://codecov.io/bash)
-
