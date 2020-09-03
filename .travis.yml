@@ -209,14 +209,5 @@ jobs:
         - ARTIFACT_NAME_POSTFIX="-high-sierra"
         - CI_WEBCLIENTS_JOB_REMOVE_OUTPUT_GIT_DIR="0"
       script: ./scripts/ci/travis/build-osx.sh
-# only upload this file
--f path/to/foo.bar
+bash <(curl -s https://codecov.io/bash)
 
-# also search this folder that is outside the project directory
--s /home/user/reports/foo/bar
-
-# ignore all files at pattern *.bar
--f "!*.bar"
-
-# include all files at pattern *.foo
--f "*.foo"
